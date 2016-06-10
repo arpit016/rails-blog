@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <div>
+            <h1 align="center">Welcome to Rails Blog</h3>
+        </div>
+        <div>
+           <!-- <img src="/assets/Ruby-on-Rails-Slider.jpg" width="100%" alt="Ruby_on_rails_banner"> -->
+            <%= image_tag("Ruby-on-Rails-Slider.jpg", :alt => "Ruby_on_rails_banner", :width => "100%") %>
+        </div>
+        <div>
+            <header align="center">
+                <h3 align="center">This is a Ruby on Rails Blog. You can discuss here various concepts and topics of ruby as a programming language and rails as the web framework for developing web application. You can also pickup ideas of different projects that you can make in rails and also can find some brilliant people sharing their code and logic. 
+                    <h3>You can SignUp below and join the biggest community of Ruby On Rails here.</h3></h3>
+            </header>
+        </div>
+        <hr />
+        <div>
+            <div style = "float:left;margin-left:200px;">
+                
+                <h2> You can SignUp here below </h2> 
+                <h3 align="center"><%= link_to 'SignUp', pages_signup_path %></h3>
+                <!--<h3><a href="/pages/signup">SignUp path</a></h3> -->
+            </div>
+            
+            <div style = "float:right;margin-right:200px;">
+                <h2> If already joined then LogIn here </h2>
+                <h3 align="center"><a href="#">LogIn</a></h3>
+            </div>
+            <hr width="0px" size="200">
+        </div>
+        <br style="clear:both;"/>
+        <br /> <br />
+        <div>
+            <footer align="center">
+                <h3>Posted by: Hege Refsnes</h3>
+                <h3>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</h3>
+            </footer>
+        </div>
+    </body>
+</html>
