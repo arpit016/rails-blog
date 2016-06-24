@@ -11,33 +11,34 @@
            <!-- <img src="/assets/Ruby-on-Rails-Slider.jpg" width="100%" alt="Ruby_on_rails_banner"> -->
             <%= image_tag("Ruby-on-Rails-Slider.jpg", :alt => "Ruby_on_rails_banner", :width => "100%") %>
         </div>
-        <div>
+        <div class="row partition">
+            <div class="col-xs-12 col-md-12 col-lg-12">
             <header align="center">
                 <h3 align="center">This is a Ruby on Rails Blog. You can discuss here various concepts and topics of ruby as a programming language and rails as the web framework for developing web application. You can also pickup ideas of different projects that you can make in rails and also can find some brilliant people sharing their code and logic. 
                     <h3>You can SignUp below and join the biggest community of Ruby On Rails here.</h3></h3>
             </header>
-        </div>
+            </div>
         <hr />
-        <div>
-            <div style = "float:left;margin-left:200px;">
+        <div class="row partition">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <div class="col-md-6 col-xs-6 col-lg-6">
                 
-                <h2> You can SignUp here below </h2> 
-                <h3 align="center"><%= link_to 'SignUp', signup_path %></h3>
+                    <h2 align="center"> You can SignUp here below </h2> 
+                    <h3 align="center"><%= link_to 'SignUp', signup_path, class: "linkdecor" %></h3>
                 <!--<h3><a href="/pages/signup">SignUp path</a></h3> -->
-            </div>
+                </div>
             
-            <div style = "float:right;margin-right:200px;">
-                <h2> If already joined then LogIn here </h2>
-                <h3 align="center"><a href="#">LogIn</a></h3>
+                <div class="col-md-6 col-xs-6 col-lg-6">
+                    <h2 align="center"> If already joined then LogIn here </h2>
+                    <h3 align="center"><%= link_to 'LogIn', signup_path, class: "linkdecor" %></h3>
+                </div>
             </div>
-            <hr width="0px" size="200">
         </div>
-        <br style="clear:both;"/>
-        <br /> <br />
+        </div>
         <div>
             <footer align="center">
-                <h3>Posted by: Hege Refsnes</h3>
-                <h3>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</h3>
+                <h3>Posted by: Arpit Agarwal</h3>
+                <h3>Contact information: <a href="mailto:agarwalarpit22@gmail.com">agarwalarpit22@gmail.com</a>.</h3>
             </footer>
         </div>
     </body>

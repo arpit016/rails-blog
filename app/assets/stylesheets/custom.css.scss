@@ -1,2 +1,41 @@
+//$navbar-default-bg: #7f0000;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.navbar {
+  background-color: #7f0000 !important;
+}
+
+#logo {
+  float: left;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.7em;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+#logo:hover{
+  color: grey;
+  text-decoration: none;
+}
+
+.partition{
+  background-color: #e5e3e3;
+}
+
+
+hr {
+    display: block;
+    height: 50px;
+    width: 60%;
+    border: 0;
+    border-top: 1px solid #000000;
+    padding: 0; 
+    border-color: black;
+}
+
+.linkdecor:hover{
+  text-decoration: none;
+}
