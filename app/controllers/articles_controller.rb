@@ -13,6 +13,7 @@ class ArticlesController < ApplicationController
   
   def create
     @article = Article.new(article_params)
+    @article.user = User.first
     if @article.save
       puts "IDDDDDDDDDDDDDDDDD "+ @article.id.to_s
       flash[:success] = "Article was successfully created"
